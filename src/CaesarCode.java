@@ -18,4 +18,12 @@ public class CaesarCode {
         return newString.toString();
     }
 
+    public static boolean valid(String text){
+        for(char c : text.toCharArray()){
+            if(c < 'A' || c > 'Z'){
+                return false;
+            }
+        }
+        return true;
+    }
 }
